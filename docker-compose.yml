@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  movitch-static-server:
+    image: nginx
+    container_name: movitch-static-server
+    ports:
+      - 80:80
+    volumes:
+      - ./config/local.webserver.conf:/etc/nginx/conf.d/site.conf
+      - ./out/:/var/www/

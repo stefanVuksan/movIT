@@ -1,0 +1,110 @@
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-100: #F8F9FF !default;
+$gray-200: #e5e5e5 !default;
+$gray-300: #ced2d6 !default;
+$gray-400: #b5babf !default;
+$gray-500: #999fa5 !default;
+$gray-600: #848a91 !default;
+$gray-700: #6b7076 !default;
+$gray-800: #4f545a !default;
+$gray-900: #36393c !default;
+$black-light: #444444 !default;
+$black: black !default;
+
+$grays: (
+  '0': $black,
+  '100': $gray-100,
+  '200': $gray-200,
+  '300': $gray-300,
+  '400': $gray-400,
+  '500': $gray-500,
+  '600': $gray-600,
+  '700': $gray-700,
+  '800': $gray-800,
+  '900': $gray-900,
+) !default;
+
+// scss-docs-start color-variables
+$blue: #007dc5 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #ed1c24 !default;
+$graylight: #6b7076 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffcb05 !default;
+$green: #8dc63f !default;
+$teal: #20c997 !default;
+$cyan: #0dcaf0 !default;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  'blue': $blue,
+  'indigo': $indigo,
+  'purple': $purple,
+  'pink': $pink,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'teal': $teal,
+  'cyan': $cyan,
+  'white': $white,
+  'gray': $gray-600,
+  'gray-dark': $gray-800,
+  'black': $black,
+) !default;
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary: #007CC5 !default;
+$secondary: #769791 !default;
+$thrid: #b93831 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'third': $thrid,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+  'alert': $red,
+  'graylight': $graylight,
+  'gray-000': $white,
+  'gray-100': $gray-100,
+  'gray-200': $gray-200,
+  'gray-300': $gray-300,
+  'gray-400': $gray-400,
+  'gray-500': $gray-500,
+  'gray-600': $gray-600,
+  'gray-700': $gray-700,
+  'gray-800': $gray-800,
+  'gray-900': $gray-900,
+  'white': $white,
+  'black': $black,
+) !default;
+// scss-docs-end theme-colors-map
+
+$navbar-light-color: $black-light;
+$navbar-light-hover-color: rgba($primary, .7);
+$navbar-light-active-color:$primary;
+
+$body-color: rgba(0, 0, 0, .5);
+$card-border-width: 0;
+$card-border-radius: 1.375rem;
+$card-box-shadow: 0px 29px 41px rgba(0, 0, 0, 0.05);
+$card-spacer-x: 1.5rem;
+$card-spacer-y: 1.5rem;

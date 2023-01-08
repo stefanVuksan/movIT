@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "@movit/utils": [
+        "utils/utils.ts"
+      ],
+      "@movit/ui-component/*": [
+        "pages/packages/Component/*"
+      ],
+      "@movit/ui-layout/*": [
+        "pages/packages/Layout/*"
+      ],
+      "@movit/ui-section/*": [
+        "pages/packages/Section/*"
+      ],
+      "@movit/image/*": [
+        "public/image/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

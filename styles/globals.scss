@@ -1,0 +1,380 @@
+@import 'variables.module';
+@import 'bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// Pages
+// todo: import this only in required page
+@import 'policity-dsgvo.module';
+
+@font-face {
+  font-family: 'Futura PT';
+  src: local('Futura PT'),
+    url(../public/font/FuturaPTMedium.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Basier Square';
+  src: local('Basier Square'),
+    url(../public/font/Basier-Square-Regular.otf) format('truetype');
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* Font*/
+h1 {
+  font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 82px;
+  line-height: 78px;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+
+h2 {
+  color: #000;
+  font-size: 2.875rem;
+}
+
+h5 {
+  color: #000;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+/*Hero section*/
+.movit {
+  &-hero {
+    .card {
+      border: none;
+      img {
+        filter: drop-shadow(0px 20px 53px rgba(0, 0, 0, 0.11));
+        border-radius: 22px;
+      }
+    }
+  }
+  &-services, &-solutions {
+    background: $gray-100;
+  }
+}
+
+.lead {
+  font-family: 'Basier Square';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 30px;
+}
+
+// region end
+
+// TODO use - notation
+// TODO use boostrap
+// TODO resuable code...
+.getStartedBtn {
+  height: 54.04999923706055px;
+  width: 159px;
+  border-radius: 8px;
+  background: #007dc5;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Basier Square';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.contactBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54.04999923706055px;
+  width: 159px;
+  border-radius: 8px;
+  font-family: 'Basier Square';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #000000;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.navLinks {
+  font-family: 'Basier Square';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.shopLog {
+  font-family: 'Basier Square';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+/*solutions section*/
+.solution-mark {
+  position: relative;
+  top: -2.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 1.375rem;
+  border-radius: 50%;
+}
+
+.solution-mark.blue {
+  background-color: $blue;
+  box-shadow: $blue-300 0px 12px 20px -8px;
+}
+
+.solution-mark.red {
+  background-color: $red;
+  box-shadow: $red-300 0px 12px 20px -8px;
+}
+
+.solution-mark.green {
+  background-color: $green;
+  box-shadow: $green-300 0px 12px 20px -8px;
+}
+
+.solution-mark.yellow {
+  background-color: $yellow;
+  box-shadow: $yellow-300 0px 12px 20px -8px;
+}
+
+.solution.card-body {
+  padding-top: 0;
+}
+/*
+
+.dieServicesH6 {
+  font-family: 'Basier Square';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  // text-transform: capitalize;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.dieServicesP {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.5;
+  max-width: 755px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+
+
+.gridCardDiv {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1440px) {
+  .gridCardDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+  }
+  .cardMain {
+    width: 830px;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 29px 41px rgba(0, 0, 0, 0.05);
+    border-radius: 22px;
+  }
+
+  .cardContent {
+    padding: 32px;
+  }
+
+  .CardHeadline {
+    font-family: 'Basier Square';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 18px;
+  }
+
+  .cardParagraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: lowercase;
+    color: #000000;
+    opacity: 0.5;
+    max-width: 468px;
+    margin-bottom: 43px;
+  }
+
+  .btnDivs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .solutionBTN {
+    font-family: 'Basier Square';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #007dc5;
+    cursor: pointer;
+  }
+
+  .arrowBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    background: #f8f7f7;
+    box-shadow: 0px 3.63641px 3.63641px rgba(0, 0, 0, 0.25);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    cursor: pointer;
+  }
+  .cardGridH3 {
+    font-family: 'Basier Square';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 46px;
+    text-transform: lowercase;
+    color: #000000;
+    margin-bottom: 42px;
+    margin-left: 6.25%;
+  }
+
+  .solutionsMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 125px;
+  }
+
+  .solutionsH3 {
+    font-family: 'Basier Square';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 119px;
+  }
+
+  .solutionsH5 {
+    font-family: 'Basier Square';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: lowercase;
+    color: #000000;
+    opacity: 0.5;
+    margin-bottom: 33px;
+  }
+  .cards {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .card {
+    position: relative;
+    width: 396px;
+    height: 474px;
+    background: #ffffff;
+    box-shadow: 0px 29px 41px rgba(0, 0, 0, 0.05);
+    border-radius: 22px;
+    padding: 24px;
+    border: none;
+  }
+  .cardImageDiv {
+    position: absolute;
+    top: -10%;
+    left: 41%;
+    width: 72px;
+    height: 72px;
+    border-radius: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .solutionMinih3 {
+    font-family: 'Basier Square';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 53px;
+    margin-bottom: 16px;
+  }
+  .solutionMiniP {
+    font-family: 'Basier Square';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: lowercase;
+    color: #000000;
+    opacity: 0.5;
+  }
+}
+*/

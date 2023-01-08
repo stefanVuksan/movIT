@@ -1,0 +1,40 @@
+.page--dsgvo {
+  .tabs-nav-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: stretch;
+
+
+    .tab-nav-menu {
+      flex-direction: column;
+      width: 26.5%;
+      padding: 35px 0 30px;
+      flex-wrap: inherit;
+      align-items: flex-start;
+      justify-content: flex-start;
+      box-shadow: 0 10px 50px rgb(0 0 0 / 5%);
+      text-align: center;
+      button{
+        width: 100%;
+        text-align: left;
+        border: none;
+      }
+    }
+    .tab-content {
+      width: 73.5%;
+      padding: 30px;
+      flex: 1 1 auto;
+    }
+
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .tabs-pane.active {
+    display: block;
+    opacity: 1;
+  }
+}
