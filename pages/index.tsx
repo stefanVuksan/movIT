@@ -1,7 +1,7 @@
 import Script from "next/script";
 
 // Layout
-import NavBar from "@movit/ui-layout/Navbar/NavBar";
+import Mainlayout from "@movit/ui-layout/Main";
 // Sections
 import SectionHero from "@movit/ui-section/Hero";
 import SectionServices from "@movit/ui-section/Services";
@@ -13,8 +13,7 @@ import ContactUs from "@movit/ui-section/ContactUs";
 
 export default function Home() {
   return (
-    <>
-      <NavBar/>
+    <Mainlayout>
       <SectionHero/>
       <SectionServices/>
       <Solutions />
@@ -22,6 +21,6 @@ export default function Home() {
       <AboutDetails />
       <ContactUs />
       <Script defer src={'script/rotating-words.js'} />
-    </>
+    </Mainlayout>
   )
 }

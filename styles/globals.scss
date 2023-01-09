@@ -71,7 +71,7 @@ p {
     padding: 5rem 0;
   }
 
-  &-about-us, &-contact-us {
+  &-about-us, &-contact-us, &-footer {
     padding: 5rem 0;
   }
 
@@ -101,6 +101,11 @@ p {
     left: 5%;
     bottom: 0;
     z-index: -1;
+  }
+
+  &-footer {
+    background-color: #222;
+    padding-bottom: 0;
   }
 }
 
@@ -269,6 +274,15 @@ p {
 .contact-form {
   padding: 15% 20%;
   box-shadow: 5px 18px 75px rgba(0, 0, 0, 0.11);
+}
+
+/* footer */
+.footer-circle {
+  width: 8px;
+  height: 8px;
+  background-color: $green;
+  border-radius: 50%;
+  box-shadow: $green-200 0px 0px 4px 0px;
 }
 
 /*

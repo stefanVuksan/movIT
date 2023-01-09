@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from "@movit/ui-layout/Navbar/NavBar";
+import NavBar from "@movit/ui-component/Navbar/NavBar";
 
 export default function Dsgvo() {
   return (
