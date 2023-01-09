@@ -47,10 +47,12 @@ h5 {
 
 h6 {
   font-size: 1rem;
+  line-height: 28px;
 }
 
 p {
   font-size: 0.875rem;
+  line-height: 28px;
 }
 
 /*Hero section*/
@@ -64,8 +66,41 @@ p {
       }
     }
   }
-  &-services, &-solutions {
+  &-services, &-solutions, &-about-details {
     background: $gray-100;
+    padding: 5rem 0;
+  }
+
+  &-about-us, &-contact-us {
+    padding: 5rem 0;
+  }
+
+  &-about-details {
+    overflow: hidden;
+  }
+
+  &-about-details::before {
+    content: url('/image/hero/bubbles.svg');
+    position: absolute;
+    right: -5%;
+    bottom: 0;
+  }
+
+  &-contact-us::before {
+    content: url('/image/contactus/background.svg');
+    background-color: $blue;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  &-contact-us::after {
+    content: url('/image/hero/bubbles.svg');
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    z-index: -1;
   }
 }
 
@@ -180,6 +215,62 @@ p {
 .solution.card-body {
   padding-top: 0;
 }
+
+/* percent bar */
+.percent-bar {
+  display: flex;
+  align-items: flex-end;  
+  border-radius: 6px 6px 0 0;
+  width: 50px;  
+
+  .value {
+    background-color: $blue-100;
+    border-radius: 6px 6px 0 0;
+    width: 50px;
+  }
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.percent {
+  font-size: 1.75rem;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-red {
+  color: $red;
+}
+
+/* about details section */
+.aboutdetails-tick {
+  width: 2rem;
+  height: 2rem;
+  padding: .4rem;
+  border-radius: 50%;
+  background-color: $green;
+}
+
+/* button */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  color: $white !important;
+  box-shadow: $blue-200 0px 12px 10px -10px;
+}
+
+/* contact us section */
+.contact-form {
+  padding: 15% 20%;
+  box-shadow: 5px 18px 75px rgba(0, 0, 0, 0.11);
+}
+
 /*
 
 .dieServicesH6 {

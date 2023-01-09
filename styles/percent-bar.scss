@@ -1,0 +1,35 @@
+@import 'variables.module';
+@import 'bootstrap/scss/bootstrap.scss';
+
+.percent-bar {
+  display: flex;
+  align-items: flex-end;  
+  border-radius: 6px 6px 0 0;
+  width: 50px;  
+
+  .value {
+    background-color: $blue-100;
+    border-radius: 6px 6px 0 0;
+    width: 50px;
+  }
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.percent {
+  font-size: 1.75rem;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-red {
+  color: $red;
+}

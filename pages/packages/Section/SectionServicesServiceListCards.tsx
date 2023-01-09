@@ -1,28 +1,27 @@
 import React from 'react'
 import CardImage from "@movit/ui-component/CardImage";
 
-import serviceImage1 from '@movit/image/services/service1.png'
 import { Col, Container, Row } from 'react-bootstrap';
 
 const SectionServicesServiceListCards = () => {
   const services:any[] = [
       {
-        image: serviceImage1,
+        image: 'image/services/service1.png',
         title: 'Terminverwaltung / Onlinebuchung',
         description: 'Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.'
       },
       {
-        image: serviceImage1,
+        image: 'image/services/service1.png',
         title: 'Terminverwaltung / Onlinebuchung',
         description: 'Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.'
       },
       {
-        image: serviceImage1,
+        image: 'image/services/service1.png',
         title: 'Terminverwaltung / Onlinebuchung',
         description: 'Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.'
       },
       {
-        image: serviceImage1,
+        image: 'image/services/service1.png',
         title: 'Terminverwaltung / Onlinebuchung',
         description: 'Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.'
       },
