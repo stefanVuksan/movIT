@@ -14,7 +14,6 @@ const ListItem = ({label, variant} : {label: string, variant: string}) =>
   <Stack direction='horizontal' gap={3} className={`justify-content-center ${variant == 'light' ? 'align-items-baseline' : 'align-items-center'}`}>
     <Image
       src={variant == 'light' ? TickIcon : TickShadowIcon}
-      // className={`-tick`}
       alt="MovIT"
       loading="lazy"
       loader={ImageLoader}
@@ -50,24 +49,22 @@ const ContactUs = () => {
                 <div>
                   {lists.map((item, idx)=><ListItem key={idx} label={item} variant="light"/>)}
                 </div>
-                <Button variant="light" style={{width: '160px'}}>Get Started</Button>
+                <Button variant="light" className='btn-block'>Get Started</Button>
                 <Stack direction='horizontal' gap={3} className='py-2'>
                   {avatars.map((avatar, idx) => <BootstrapImage key={idx} roundedCircle src={avatar}/>)}
                 </Stack>
               </Stack>
             </Col>
             <Col xs={12} xxl={7} xxxl={6}>
-              <Card>
-                <Card.Body className='contact-form'>
-                  <Stack gap={3}>
-                    <h2>Einfache lösung für ihr geschäftsmodell</h2>
-                    <Form.Control type="input" className='bg-light border-0' placeholder='example@gmail.com'/>
-                    <Button variant="primary">Contact Us</Button>
-                    <div>
-                      {lists.map((item, idx)=><ListItem key={idx} label={item} variant="dark"/>)}
-                    </div>
-                  </Stack>
-                </Card.Body>
+              <Card className='contact-form'>
+                <Stack gap={3}>
+                  <h2>Einfache lösung für ihr geschäftsmodell</h2>
+                  <Form.Control type="input" className='bg-light border-0' placeholder='example@gmail.com'/>
+                  <Button variant="primary">Contact Us</Button>
+                  <div>
+                    {lists.map((item, idx)=><ListItem key={idx} label={item} variant="dark"/>)}
+                  </div>
+                </Stack>
               </Card>
             </Col>
           </Row>

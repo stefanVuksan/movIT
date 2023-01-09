@@ -10,8 +10,7 @@ const RotatingText = ({title, words}:{words:string[],title:string}) => {
 
   return (
       <div data-text-rotating className="text-rotating text-center">
-        <h2> {title} </h2>
-        <h2 dangerouslySetInnerHTML={createMarkup()}/>
+        <div className='h2'>{title}<span dangerouslySetInnerHTML={createMarkup()} /></div>
       </div>
 
   )

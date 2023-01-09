@@ -21,6 +21,7 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+  font-family: 'Basier Square';
 }
 
 /* Font*/
@@ -71,6 +72,10 @@ p {
     padding: 5rem 0;
   }
 
+  &-solutions {
+    padding-top: 0;
+  }
+
   &-about-us, &-contact-us, &-footer {
     padding: 5rem 0;
   }
@@ -83,7 +88,7 @@ p {
     content: url('/image/hero/bubbles.svg');
     position: absolute;
     right: -5%;
-    bottom: 0;
+    bottom: 6%;
   }
 
   &-contact-us::before {
@@ -99,7 +104,7 @@ p {
     content: url('/image/hero/bubbles.svg');
     position: absolute;
     left: 5%;
-    bottom: 0;
+    bottom: 8%;
     z-index: -1;
   }
 
@@ -185,6 +190,22 @@ p {
   color: #000000;
 }
 
+/* service section */
+.service-top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.btn-read-more {
+  width: 38px;
+  height: 38px;
+  background: #F8F7F7;
+  box-shadow: 0px 3.63641px 3.63641px rgb(0 0 0 / 25%);
+  border-radius: 50%;
+  padding: 6px 14px;
+}
+
 /*solutions section*/
 .solution-mark {
   position: relative;
@@ -268,6 +289,10 @@ p {
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
   color: $white !important;
   box-shadow: $blue-200 0px 12px 10px -10px;
+}
+
+.btn-block {
+  width: 160px;
 }
 
 /* contact us section */
