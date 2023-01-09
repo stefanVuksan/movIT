@@ -11,7 +11,7 @@ const Specificity = ({data}: {data: any}) =>
     <h6>{data.description}</h6>
   </Stack>
 
-const AboutUs = () => {
+const SectionAboutUs = () => {
 
   const specificities = [
     {
@@ -71,4 +71,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default SectionAboutUs

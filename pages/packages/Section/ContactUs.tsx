@@ -21,7 +21,7 @@ const ListItem = ({label, variant} : {label: string, variant: string}) =>
     <h6 className={`col-8 ${variant == 'light' ? 'text-white' : 'text-black'} m-1 opacity-50`}>{label}</h6>
   </Stack>
 
-const ContactUs = () => {
+const SectionContactUs = () => {
 
   const lists = [
     "Die Rundumlösung, die Ihnen mehr Zeit und",
@@ -74,4 +74,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default SectionContactUs

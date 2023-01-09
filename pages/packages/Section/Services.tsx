@@ -2,13 +2,36 @@ import React from 'react'
 import Image from 'next/image'
 import { ImageLoader } from '@movit/utils'
 
-import { Button, Card, Col, Container, Nav, NavDropdown, Row, Stack } from 'react-bootstrap'
+import { Button, Col, Container, Row, Stack } from 'react-bootstrap'
 import Section from '../Section'
-import SectionServicesServiceListCards from './SectionServicesServiceListCards'
 
 import TopLineImage from '@movit/image/services/top line.png'
+import CardImage from '@movit/ui-component/CardImage'
 
 const SectionServices = () => {
+  const services:any[] = [
+    {
+      image: 'image/services/service1.png',
+      title: 'Terminverwaltung / Onlinebuchung',
+      description: 'Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.'
+    },
+    {
+      image: 'image/services/service1.png',
+      title: 'Terminverwaltung / Onlinebuchung',
+      description: 'Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.'
+    },
+    {
+      image: 'image/services/service1.png',
+      title: 'Terminverwaltung / Onlinebuchung',
+      description: 'Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.'
+    },
+    {
+      image: 'image/services/service1.png',
+      title: 'Terminverwaltung / Onlinebuchung',
+      description: 'Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.'
+    },
+  ];
+
   return (
     <Section name="services">
       <Image
@@ -35,7 +58,20 @@ const SectionServices = () => {
           <Button variant='primary' className='btn-block mx-auto'>Get Started</Button>
         </Stack>
       </Container>
-      <SectionServicesServiceListCards />
+      <Container className='mt-5'>
+        <h2>Lorem Ipsum</h2>
+        <Row xs={1} md={2} className="g-4">
+        {
+          services.map((service, idx) => {
+            return (
+                <Col key={idx}>
+                  <CardImage data={service}></CardImage>
+                </Col>
+            )
+          })
+        }
+        </Row>
+      </Container>
     </Section>
   )
 }

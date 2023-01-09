@@ -21,7 +21,7 @@ const SolutionCard = ({solution, variant}: {solution: any, variant: string}) =>
     </Card.Body>
   </Card>
 
-const Solutions = () => {
+const SectionSolutions = () => {
   const solutions = [
     {
       title: 'Lorem ipsum dolor',
@@ -93,4 +93,4 @@ const Solutions = () => {
   )
 }
 
-export default Solutions
+export default SectionSolutions

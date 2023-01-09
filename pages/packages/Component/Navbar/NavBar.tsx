@@ -10,7 +10,7 @@ import {ImageLoader} from "@movit/utils";
 
 const NavBar = () => {
   return (
-      <Navbar expand="md" className={'shadow-sm'}>
+      <Navbar expand="md" className='shadow-sm py-3'>
           <Container>
               <Navbar.Brand style={{ width: '200px' }} href="/">
                   <Image  loader={ImageLoader} src={Logo} alt="Logo of MovIT" />
@@ -20,16 +20,14 @@ const NavBar = () => {
                   <MenuDesktop/>
                   <div style={{ width: '200px' , margin: 'auto'}} className="d-flex">
                       <Nav
-                          className="me-auto my-2 my-lg-0 w-100 justify-content-center align-items-center"
+                          className="me-auto w-100 justify-content-center align-items-center align-items-xxl-baseline"
                           style={{ maxHeight: '100px' }}
                           navbarScroll
-                      >     <div style={{ margin: 'auto' }}>
-                          <Nav.Link className='shopLog'  href="#action1">Login</Nav.Link>
+                      >
+                          <Nav.Link className='shopLog'  href="#action1">Log In</Nav.Link>
                           <Nav.Link className='shopLog'  href="#action2">Shop
                               <Image loader={ImageLoader} className={'ps-md-2'} height={30} priority src={Cart} alt={'Shop icon'}/>
                           </Nav.Link>
-                          </div>
-
                       </Nav>
 
                   </div>

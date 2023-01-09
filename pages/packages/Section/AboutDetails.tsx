@@ -19,7 +19,7 @@ const ListItem = ({label} : {label: string}) =>
     <p className='col-4'>{label}</p>
   </Stack>
 
-const AboutDetails = () => {
+const SectionAboutDetails = () => {
   const lists = [
     "Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.",
     "Erhöhen Sie Ihre Umsätze durch ein immer verfügbares Online-Terminbuchungssystem.",
@@ -46,4 +46,4 @@ const AboutDetails = () => {
   )
 }
 
-export default AboutDetails
+export default SectionAboutDetails
