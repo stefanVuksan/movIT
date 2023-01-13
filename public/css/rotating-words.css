@@ -10,8 +10,8 @@
   transform: translateX(-6%);
   text-transform: uppercase;
   margin-bottom: 20px;
-    flex-direction: column;
-    max-width: 360px;
+  flex-direction: column;
+  max-width: 360px;
 }
 @media only screen and (min-width: 1440px) {
   .text-rotating {
@@ -22,32 +22,37 @@
 }
 
 .text-rotating p,
+.text-rotating span,
 .text-rotating h2 {
   display: inline-flex;
   margin: 0;
   vertical-align: top;
 }
 .text-rotating p .word,
+.text-rotating span .word,
 .text-rotating h2 .word {
   position: absolute;
   display: flex;
   opacity: 0;
-  padding-left: 10px;
 }
 .text-rotating p .word .letter,
+.text-rotating span .word .letter,
 .text-rotating h2 .word .letter {
   transform-origin: center center 25px;
 }
 .text-rotating p .word .letter.out,
+.text-rotating span .word .letter.out,
 .text-rotating h2 .word .letter.out {
   transform: rotateX(90deg);
   transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
 }
 .text-rotating p .word .letter.in,
+.text-rotating span .word .letter.in,
 .text-rotating h2 .word .letter.in {
   transition: 0.38s ease;
 }
 .text-rotating p .word .letter.behind,
+.text-rotating span .word .letter.behind,
 .text-rotating h2 .word .letter.behind {
   transform: rotateX(-90deg);
 }

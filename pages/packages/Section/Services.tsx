@@ -7,6 +7,7 @@ import Section from '../Section'
 
 import TopLineImage from '@movit/image/services/top line.png'
 import CardImage from '@movit/ui-component/CardImage'
+import RotatingText from "@movit/ui-component/RotatingText";
 
 const SectionServices = () => {
   const services:any[] = [
@@ -44,11 +45,13 @@ const SectionServices = () => {
       <Container>
         <Stack gap={3}>
           <h6 className='text-center'>Die Rundumlösung, die Ihnen mehr Zeit und mehr Umsatz verschafft</h6>
-          {/* <RotatingText
-            title="Bewege dein Unternehmen mit "
-            words={['Inspiration', 'Technologie', 'Movit']}
-          /> */}
-          <h2 className='text-uppercase text-center'>Bewege dein Unternehmen mit MOVIT</h2>
+          {
+            <RotatingText
+                title="Bewege dein Unternehmen mit "
+                words={['Inspiration', 'Technologie', 'Movit']}
+            />
+          }
+          <h2 className='d-none text-uppercase text-center'>Bewege dein Unternehmen mit MOVIT</h2>
           <p className='text-center col-6 mx-auto'>
             Unsere Lösungen unterstützen Sie bei Ihrer täglichen Arbeit, ob
             Terminvereinbarung mit Ihren KundInnen oder Mitarbeitenden, die
@@ -65,7 +68,7 @@ const SectionServices = () => {
           services.map((service, idx) => {
             return (
                 <Col key={idx}>
-                  <CardImage data={service}></CardImage>
+                  <CardImage data={service}/>
                 </Col>
             )
           })

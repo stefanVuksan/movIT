@@ -8,10 +8,10 @@ const MenuDesktop = () => {
           className="me-auto w-100 justify-content-center align-items-center gap-xxl-5"
           navbarScroll
       >
-         <Nav.Link className='navLinks' href="#action1">PRODUCTS</Nav.Link>
-         <Nav.Link className='navLinks' href="#action2">BUSINESS TYPES</Nav.Link>
-         <Nav.Link className='navLinks' href="#action3">THE MOVEMENT</Nav.Link>
-         <Nav.Link className='navLinks' href="#action4">PRICING</Nav.Link>
+         <Nav.Link href="#action1">PRODUCTS</Nav.Link>
+         <Nav.Link href="#action2">BUSINESS TYPES</Nav.Link>
+         <Nav.Link href="#action3">THE MOVEMENT</Nav.Link>
+         <Nav.Link href="#action4">PRICING</Nav.Link>
          {/* <NavDropdown className='navLinks' title="Lorem Ipsum" >
              <NavDropdown.Item className='navLinks' href="#action5">Lorem Ipsum</NavDropdown.Item>
              <NavDropdown.Item className='navLinks' href="#action6">
