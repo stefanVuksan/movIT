@@ -322,3 +322,100 @@ p {
     padding: 2rem;
   }
 }
+
+/* nav bar */
+
+@include media-breakpoint-down(md) {
+  .cnavroot, .cnavsub {
+    height: auto !important;
+  }
+
+  .nav-link.active, .nav-link:hover, .nav-link:focus {
+    color: $nav-link-color !important;
+  }
+  
+  .cnavlink {
+    padding: 8px 0 !important;
+
+    &.active {
+      .title.haschild::before, .mtitle.haschild::before {
+        transform: rotate(-135deg);
+        right: -4px;
+      }
+    }
+    .title, .mtitle {
+      position: relative;
+      &.haschild::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        right: 0px;
+        border-style: solid;
+        border-width: 0;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-color: var(--color-text, #1a1a1a);
+        transform: translate3d(50%, calc(-50% - 2px), 0) rotate(45deg);
+        transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        top: 12px;
+      }
+    }  
+  
+    .desc {
+      opacity: .5;
+    }
+  
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .cnavroot {
+    position: absolute;
+    z-index: 99;
+    // top: 96px;
+    width: 15%;
+    background: #fff;
+    // border: 1px solid #ccc;
+    // border-top: 0;
+    box-shadow: rgb(0 0 0 / 10%) 0px 6px 6px -1px;
+    border-radius: 0 0 8px 8px;
+    padding: 16px 0;
+  }
+  
+  .cnavsub {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 8px);
+    width: 100%;
+    border-left: 1px solid #ccc;
+    // border-top: 0;
+    box-shadow: rgb(0 0 0 / 10%) 0px 6px 6px -1px;
+    // padding: 16px;
+    background: #fff;
+    border-radius: 0 0 8px 0;
+    padding: 16px 0;
+  }
+  
+  .cnavlink {
+    padding: 8px 24px !important;
+    .title {
+      // font-size: 18px;
+      // font-weight: bold;
+      &.haschild::after {
+        content: '→';
+        font-family: monospace;
+        margin-left: 8px;
+      }
+    }  
+  
+    .desc {
+      opacity: .5;
+    }
+  
+    &.active .desc {
+      opacity: 1;
+    }
+  }
+}

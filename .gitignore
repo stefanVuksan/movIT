@@ -36,3 +36,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+.vs/website-movit.ch/FileContentIndex/read.lock
+.vs/website-movit.ch/v17/.suo
